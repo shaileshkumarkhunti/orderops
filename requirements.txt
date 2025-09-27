@@ -1,0 +1,7 @@
+streamlit==1.36.0
+openai>=1.35.10
+duckduckgo-search==6.2.12
+beautifulsoup4==4.12.3
+requests>=2.32.0
+python-dateutil>=2.9.0.post0
+# tavily-python>=0.3.4   # uncomment if you add TAVILY_API_KEY

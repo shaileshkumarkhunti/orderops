@@ -1,0 +1,55 @@
+<!-- TEMPLATE:HERO -->
+<div class="hero">
+  <div style="display:flex; gap:18px; align-items:center;">
+    <div style="flex:1;">
+      <h1>📦 OrderAi Copilot</h1>
+      <p>Human-like help for tracking, returns, cancellations, and more — powered by Gen AI.</p>
+      <div style="margin-top:8px;">Signed in: <span class="phone-pill">+91 {phone_formatted}</span></div>
+    </div>
+    <div aria-label="Bot" title="OrderAi Bot" style="flex:0 0 220px;">
+      <!-- Inline robot SVG to avoid external image -->
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img">
+        <defs><linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0%" stop-color="#6c8bff"/><stop offset="100%" stop-color="#22d3ee"/></linearGradient></defs>
+        <rect x="10" y="30" width="180" height="140" rx="18" fill="url(#g1)" opacity="0.22"/>
+        <rect x="30" y="50" width="140" height="100" rx="16" fill="#10183a" stroke="#3553c9"/>
+        <circle cx="75" cy="100" r="12" fill="#56e3ff"/><circle cx="125" cy="100" r="12" fill="#56e3ff"/>
+        <rect x="60" y="125" width="80" height="10" rx="5" fill="#6c8bff" opacity="0.8"/>
+        <rect x="95" y="25" width="10" height="15" fill="#6c8bff"/><circle cx="100" cy="20" r="8" fill="#22d3ee"/>
+      </svg>
+    </div>
+  </div>
+</div>
+<!-- END TEMPLATE -->
+
+<!-- TEMPLATE:ORDER_CARD -->
+<div class="order-card">
+  <img class="order-img" src="{image_url}" alt="Product image"/>
+  <div class="meta">
+    <div style="display:flex;justify-content:space-between;align-items:center;">
+      <div style="font-weight:700;">{active_dot}{order_id}</div>
+      <div>{status_pill}</div>
+    </div>
+    <div style="color:#b9c1db; font-size:13px; margin-top:4px;">{items_list}</div>
+    <div style="margin-top:8px; font-size:13px;">
+      <strong>Courier:</strong> {courier} &nbsp;|&nbsp; <strong>Tracking:</strong> {tracking}<br/>
+      <strong>ETA:</strong> {eta} &nbsp;|&nbsp; <strong>Ship:</strong> {ship} &nbsp;|&nbsp; <strong>Delivered:</strong> {delivered}<br/>
+      <strong>Return until:</strong> {return_until}<br/>
+      <strong>Address:</strong> {address}
+    </div>
+  </div>
+</div>
+<!-- END TEMPLATE -->
+
+<!-- TEMPLATE:LOADING -->
+<div class="loading-overlay">
+  <div class="loading-card">
+    <div class="pulse-ring"></div>
+    <div class="spinner big"></div>
+    <div class="loader-text">
+      <div class="loader-title">{title}</div>
+      <div class="loader-subtitle">{subtitle}</div>
+    </div>
+  </div>
+</div>
+<!-- END TEMPLATE -->
